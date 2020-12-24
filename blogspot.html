@@ -1,18 +1,20 @@
-<html>
+<html lang="es">
     <head>
+        <meta charset="UTF-8" />
+	    <meta name="viewport" content="width=device-width, initial-scale=1" />
         <title>Bienvenido a Hyperblog 2.0</title>
         <link rel="stylesheet" href="css/estilos.css" />
     </head>
     <body>
+        <header>
+            <img id="logo" src="imagenes/SpaceX.jpg"/>
+            Hyperblog
+            <span id="tagline">
+                Tu blog de cabecera
+            </span>
+        </header>
         <div id="container">
-            <div id ="cabecera">
-                <img id="logo" src="imagenes/SpaceX.jpg"/>
-                Hyperblog
-                <span id="tagline">
-                    Tu blog de cabecera
-                </span>
-            </div>
-            <div id="post">
+            <section>
                 <h1>Este es el título atractivo 
                     e interesante del post</h1>
                 <p>Y este es el párrafo de inicio
@@ -20,23 +22,34 @@
                     cosas increibles que se pueden
                     hacer con ramas.
                 </p>
-                <p><img src="imagenes/universe.jpeg" width="100%"></p>
+                <p><img src="imagenes/universe.jpeg" width="50%"></p>
+            </section>
+            <aside>
+                <div>
+                    <p>Pincha la imagen para ir al curso</p>
+                    <a href="https://platzi.com/cursos/git-github/">
+                        <img alt="Platzi" src="imagenes/platzi.png"
+                        width=150" height="70">
+                    </a>
+                </div>
+            </aside>
+            <article>
                 <p>
                     Los blogs son la mejor forma
                     de compartir información y tus
                     ideas.
                     Mucho mas que salir en conferencias
                     o salir en Youtube. Excepto si eres 
-                    un rockstar. Pero estadisticamente
-                    no lo eres..... por ahora.
+                    un <i>rockstar</i>. Pero estadisticamente
+                    no lo eres..... <strong>por ahora</strong>.
                 </p>
                 <p>
                     Suscribete y dale like
                 </p>
-            </div>
-            <div  id ="footer">
-                Hecho con amor &lt;3 
-            </div>
+            </article>
         </div> 
+        <footer>
+            Hecho con amor &lt;3 
+        </footer>
     </body>
 </html>
